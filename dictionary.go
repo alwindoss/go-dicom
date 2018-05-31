@@ -67,7 +67,7 @@ func (p *Parser) getDictEntry(group, element uint16) (*dictEntry, error) {
 
 	var entry *dictEntry
 
-	tag := fmt.Sprintf("(%s,%s)", group, element)
+	tag := fmt.Sprintf("(%d,%d)", group, element)
 
 	// does the entry exist?
 	exists := p.dictionary[group] != nil && p.dictionary[group][element] != nil
