@@ -2,12 +2,13 @@ package main
 
 import (
 	"flag"
-	"github.com/gillesdemey/go-dicom"
 	"io/ioutil"
 	"os"
 	fp "path/filepath"
 	"strings"
 	"sync"
+
+	"github.com/alwindoss/go-dicom"
 )
 
 var (
